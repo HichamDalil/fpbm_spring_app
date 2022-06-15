@@ -13,6 +13,20 @@ public class Salle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCapaciteEtudiant(long capaciteEtudiant) {
+        this.capaciteEtudiant = capaciteEtudiant;
+    }
+
     @Column(name = "name")
     private String name;
     @Column(name = "capaciteEtudiant")
